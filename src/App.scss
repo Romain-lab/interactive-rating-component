@@ -42,9 +42,6 @@ p {
     color: var(--lightgray);
     line-height: 1.5;
   }
-  &__voted {
-    display: none;
-  }
   &__scoreList {
     display: flex;
     list-style-type: none;
@@ -64,6 +61,21 @@ p {
   }
   &__bubble:last-child {
     margin-right: 0;
+  }
+  &__selected {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  &__error {
+    text-align: center;
+    margin-top: 2rem;
   }
   &__bubble:hover {
     background-color: var(--lightgray);
@@ -95,6 +107,18 @@ p {
   &__btn:hover {
     background-color: var(--white);
     color: var(--orange);
+  }
+  &__voted {
+    text-align: center;
+  }
+  &__score {
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding: .5rem 1.5rem;
+    background-color: var(--mediumgray);
+    color: var(--orange);
+    border-radius: 20px;
   }
 }
 
