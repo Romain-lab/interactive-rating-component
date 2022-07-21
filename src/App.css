@@ -127,4 +127,42 @@ p {
   color: var(--white);
 }
 
+@media (max-width: 620px) {
+  .rating {
+    width: auto;
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+  }
+  .rating__title {
+    font-size: 22px;
+  }
+  .rating__description {
+    font-size: 14px;
+  }
+  .rating__starBubble {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  .rating__bubble {
+    width: 40px;
+    height: 40px;
+  }
+  .rating__selected {
+    width: 40px;
+    height: 40px;
+  }
+  .rating__btn {
+    margin-top: 1rem;
+  }
+  .copyright {
+    text-align: center;
+    font-size: 14px;
+  }
+  svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+
 /*# sourceMappingURL=App.css.map */
